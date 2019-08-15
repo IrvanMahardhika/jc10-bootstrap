@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <!-- link ini di copy dari web bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- style utk menentukan perilaku website saat lebar browser diubah (matikan dulu style dari bootstrap diatas) -->
+    <!-- <style>
+        /* small */
+        @media (min-width: 576px){
+            body {
+                background-color: aqua
+            }
+        }
+        /* medium */
+        @media (min-width: 768px){
+            body {
+                background-color: blue
+            }
+        }
+        /* large */
+        @media (min-width: 992px){
+            body {
+                background-color: rebeccapurple
+            }
+        }
+        /* xlarge */
+        @media (min-width: 1200px){
+            body {
+                background-color: yellowgreen
+            }
+        }
+    </style> -->
+</head>
+<body>
+    <button class="btn btn-outline-primary">Get Started</button>
+
+    <!-- Typography -->
+    <h1>Hello with boothstrap</h1>
+    <h2>Hello with boothstrap</h2>
+    <h3>Hello with boothstrap</h3>
+    <h4>Hello with boothstrap</h4>
+    <h5>Hello with boothstrap</h5>
+    <h6>Hello with boothstrap</h6>
+    <!-- walau tag nya h6, tapi jika diberi class h1, maka akan menjadi seperti h1 -->
+    <h6 class="h1">Hello with boothstrap</h6>
+    <br>
+    <!-- tampilan utk class display, hanya ada display-1 sd display-4 -->
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <br><hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad hic earum natus omnis magnam molestiae vel itaque aspernatur provident totam distinctio eligendi ratione, sit commodi sint quos non aliquid?
+    </p>
+    <!-- ada class lead utk tag p -->
+    <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad hic earum natus omnis magnam molestiae vel itaque aspernatur provident totam distinctio eligendi ratione, sit commodi sint quos non aliquid?
+    </p>
+    <!-- ada class text-monospace utk tag p -->
+    <p class="text-monospace">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque autem tempore odio nam sequi aliquid nemo tempora fuga nihil, ad architecto velit molestiae molestias non optio perspiciatis maiores officia et!
+    </p>
+    <br><hr>
+    <!-- class untuk text formatting -->
+    <p class="font-weight-bold">Teks Bold</p>
+    <p class="font-weight-normal">Teks Normal</p>
+    <p class="font-italic">Teks Italic</p>
+    <p class="text-uppercase">make to uppercase</p>
+    <p class="text-lowercase">MAKE TO LOWERCASE</p>
+    <p class="text-capitalize">make to capitalize</p>
+    <br><hr>
+    <!-- class untuk quote -->
+    <blockquote class="blockquote">
+        <p>
+            Within great power comes great responsibility
+        </p>
+        <footer class="blockquote-footer">
+            Peter Parker <cite title="Source Title">aka Spiderman</cite>
+        </footer>
+    </blockquote>
+    <br><hr>
+    <ul class="list-unstyled">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+        <li>List 5</li>
+    </ul>
+    <br><hr>
+    <!-- text alignment & display -->
+    <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nobis quidem tempore, officiis corrupti ullam repellat qui hic recusandae, dicta rerum beatae eum nihil at culpa autem illum quia dolorum!</p>
+    <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quisquam laudantium delectus, blanditiis itaque, aliquam possimus facere quae similique provident dolorem quaerat excepturi ipsa. Quaerat enim hic commodi labore maxime.</p>
+    <p class="text-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur natus molestias, perspiciatis ex temporibus suscipit minima architecto commodi dicta repellendus quidem ab perferendis ipsum, quas numquam aperiam eum repellat quos!</p>
+    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, iure consequatur ratione atque unde illo libero, voluptatem fuga, quod distinctio ea! Earum accusamus vel nisi obcaecati. Dolores expedita deserunt corporis.</p>
+    <!-- Media Query -->
+    <!-- Tentang style yg akan diterapkan pada lebar layar tertentu -->
+    <!-- 
+        small = sm
+        medium = md
+        large = lg
+        extralarge = xl
+     -->
+    <p class="text-sm-right">Rata kanan pada small atw lebih</p>
+    <p class="text-md-right">Rata kanan pada medium atw lebih</p>
+    <p class="text-lg-right">Rata kanan pada lg atw lebih</p>
+    <p class="text-xl-right">Rata kanan pada xl atw lebih</p>
+    <br>
+    <p class="text-sm-center">Rata tengah pada small atw lebih</p>
+    <p class="text-md-center">Rata tengah pada medium atw lebih</p>
+    <p class="text-lg-center">Rata tengah pada lg atw lebih</p>
+    <p class="text-xl-center">Rata tengah pada xl atw lebih</p>
+    <br><hr>
+    <!-- Block level element & Inline level element -->
+    <!-- width & height hanya berlaku utk block level element -->
+    <h1 class="d-inline bg-danger">Tag Header 1</h1>
+    <h1 class="d-inline bg-warning">Tag Header 2</h1>
+    <span class="d-block bg-primary">Tag inline 1</span>
+    <span class="d-block bg-success">tag inline 2</span>    
+    <br><hr>
+    <!-- Mewarnai -->
+    <!-- Text -->
+    <p class="text-primary">Primary</p>
+    <p class="text-info">Info</p>
+    <p class="text-success">Success</p>
+    <p class="text-secondary">Secondary</p>
+    <p class="text-danger">Danger</p>
+    <p class="text-warning">Waring</p>
+    <p class="text-dark">Dark</p>
+    <!-- link -->
+    <p>
+        <a href="" class="text-primary">Link Primary</a>
+    </p>
+    <p>
+        <a href="" class="text-info">Link Info</a>
+    </p>
+    <p>
+        <a href="" class="text-danger">Link Danger</a>
+    </p>
+    <br><hr>
+    <!-- background -->
+    <div style="background-color: darkgray">
+        <p class="text-white bg-primary">Background Primary</p>
+        <p class="text-white bg-info">Background Info</p>
+        <p class="text-white bg-transparent">Background Transparent</p>
+        <p class="text-danger bg-white">Background White</p>
+    </div>
+    <br><hr>
+    <!-- Spacing / box model -->
+    <!-- 
+        - Margin collapse terjadi pada sisi 'vertikal'
+        - Ketika margin top dan margin bottom dari 2 element bertemu, maka akan dipilih margin yg terbesar 
+     -->
+    <!-- Margin adalah jarak dari element ke luar -->
+    <h1 class="bg-info">Something</h1>
+    <h1 class="bg-info mt-0">Margin top 0</h1>
+    <h1 class="bg-info mt-1">Margin top 1</h1>
+    <h1 class="bg-info mt-2">Margin top 2</h1>
+    <h1 class="bg-info mt-3">Margin top 3</h1>
+    <h1 class="bg-info mt-4">Margin top 4</h1>
+    <h1 class="bg-info mt-5">Margin top 5</h1>
+    <!-- 
+        Property
+        margin = m
+        padding = p
+
+        SIDE CODE
+        top = t
+        right = r
+        bottom = b
+        left = l
+
+        right and left = x
+        top and bottom = y
+     -->
+     <p>
+         <span class="bg-info mr-5">Margin right 5</span>
+         <span class="mx-5">Text in the middle</span>
+         <span class="bg-danger ml-5">Margin left 5</span>
+     </p>
+
+
+
+
+
+
+
+    <div style="margin-top: 600px"></div>
+    <!-- link ini di copy dari web bootstrap, di paste ke body di paling bawah -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
