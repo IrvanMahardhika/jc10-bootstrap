@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GRIDFLEX</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="display-4 text-center border-bottom">GRID & FLEXBOX</h1>
+
+    <!-- Grid System -->
+    <!-- Tentang menentukan posisi element -->
+    <!-- Dalam grid bootstrap, lebar browser dibagi menjadi 12 bagian -->
+
+    <!-- div dengan class container digunakan jika ingin dibuat ketengah -->
+   <div class="container">
+        <!-- contoh 1 -->
+        <div class="row mb-5">
+                <div class="border border-primary col-sm-6 col-md-8 col-lg-9 col-xl-10">
+                    <ul>
+                        <li>6 column pada small screen</li>
+                        <li>8 column pada medium screen</li>
+                        <li>9 column pada large screeen</li>
+                        <li>10 column pada extralarge screen</li>
+                    </ul>
+                </div>
+                <div class="border border-warning col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <ul>
+                        <li>6 column pada small screen</li>
+                        <li>4 column pada medium screen</li>
+                        <li>3 column pada large screen</li>
+                        <li>2 column pada extralarge screen</li>
+                    </ul>
+                </div>
+            </div>
+
+        <!-- contoh 2 -->
+        <!-- tidak tidak didefinisikan, maka col akan mengambil sisa column yg ada -->
+        <div class="row mb-5">
+            <div class="col-sm-6 border border-primary">6 column on small</div>
+            <div class="col-sm-4 border border-danger">4 column on small</div>
+            <div class="col border border-warning">Auto column</div>
+        </div>
+
+        <!-- contoh 3 -->
+        <!-- Order, menentukan urutan -->
+        <div class="row mb-5">
+            <div class="order-1 col-sm-4 border border-primary">Div Pertama</div>
+            <div class="order-1 col-sm-4 border border-danger">Div Kedua</div>
+            <div class="order-1 col-sm-4 border border-warning">Div Ketiga</div>
+        </div>
+
+        <!-- contoh 4 -->
+        <!-- offset -->
+        <!-- skip beberapa bagian -->
+        <div class="row">
+            <div class="col-sm-8 offset-2 border border-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+
+   </div>
+    
+</body>
+</html>
